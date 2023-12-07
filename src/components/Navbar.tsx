@@ -93,7 +93,7 @@ const Navbar = () => {
                 />
               </svg>
               <span className="badge badge-sm indicator-item bg-myBlackHead text-myWhite  font-semibold group-hover:text-myWhite group-hover:bg-myBlackpara">
-                8
+                0
               </span>
             </div>
           </div>
