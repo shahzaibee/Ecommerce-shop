@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .custom-img {
-  background-image: url(../../public/hero.avif);
+  background-image: url(../../public/hero.avif)
 }
