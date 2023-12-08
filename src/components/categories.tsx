@@ -24,7 +24,7 @@ const Categories = () => {
               alt="tops"
               width={350}
               height={350}
-              className="rounded-xl duration-500 group-hover:scale-125 h-[365px] object-cover object-bottom"
+              className="rounded-xl duration-500 group-hover:scale-125 h-[365px] object-cover lg:object-bottom object-top"
             />
             <div className="hidden lg:block absolute -bottom-24 duration-500 group-hover:bottom-0 scroll-m-20 text-4xl font-extrabold tracking-tight  bg-myBlackHead/70 text-center text-myWhite w-full">
               <h1 className="uppercase">Tops</h1>
@@ -42,7 +42,7 @@ const Categories = () => {
               alt="pants"
               width={350}
               height={350}
-              className="rounded-xl duration-500 group-hover:scale-125 h-[365px] object-cover object-bottom"
+              className="rounded-xl duration-500 group-hover:scale-125 h-[365px] object-cover lg:object-bottom object-top"
             />
             <div className="hidden lg:block absolute -bottom-24 duration-500 group-hover:bottom-0 scroll-m-20 text-4xl font-extrabold tracking-tight  bg-myBlackHead/70 text-center text-myWhite w-full">
               <h1 className="uppercase">pants</h1>
