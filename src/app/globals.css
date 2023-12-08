@@ -3,5 +3,12 @@
 @tailwind utilities;
 
 .custom-img {
-  background-image: url(../../public/hero.avif)
+  background-image: url(../../public/hero.avif);
+}
+
+.promo-1 {
+  background-image: url("../../public//promo1.avif");
+}
+.promo-2 {
+  background-image: url("../../public/promo2.avif");
 }
