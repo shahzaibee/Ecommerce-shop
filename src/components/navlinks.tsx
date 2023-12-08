@@ -17,25 +17,25 @@ import {
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Tops",
-    href: "#",
+    href: "/tops",
     description:
       "Versatile tops for every style, occasion - chic, comfortable, and trendsetting.",
   },
   {
     title: "Pants",
-    href: "#",
+    href: "/pants",
     description:
       "Stylish pants for all occasions, blending comfort, fashion, and versatility.",
   },
   {
     title: "Accesories",
-    href: "#",
+    href: "/accessories",
     description:
       "Elevate your style with curated accessories for a chic statement.",
   },
   {
     title: "shoes",
-    href: "#",
+    href: "/shoes",
     description:
       "Stylish shoes for every step, blending comfort, fashion, and durability.",
   },
@@ -59,6 +59,7 @@ export function NavigationMenuDemo() {
           <NavigationMenuContent>
             <ul className="bg-myWhite grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
+                <Link href="">
                 <ListItem
                   key={component.title}
                   title={component.title}
@@ -66,13 +67,14 @@ export function NavigationMenuDemo() {
                 >
                   {component.description}
                 </ListItem>
+                </Link>
               ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         {/* About */}
         <NavigationMenuItem>
-          <Link href="" legacyBehavior passHref>
+          <Link href="/about" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               About
             </NavigationMenuLink>
@@ -80,7 +82,7 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
         {/* Contact */}
         <NavigationMenuItem>
-          <Link href="" legacyBehavior passHref>
+          <Link href="/contact" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Contact
             </NavigationMenuLink>
