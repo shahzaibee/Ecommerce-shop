@@ -34,7 +34,7 @@ const components: { title: string; href: string; description: string }[] = [
       "Elevate your style with curated accessories for a chic statement.",
   },
   {
-    title: "shoes",
+    title: "Shoes",
     href: "/shoes",
     description:
       "Stylish shoes for every step, blending comfort, fashion, and durability.",
