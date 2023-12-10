@@ -9,6 +9,8 @@ const BestSelling = () => {
       title: "Black Shirt",
       description: "Best Quality t-shirt for women",
       price: 150,
+      category: "tops",
+      slug: "black shirt",
     },
     {
       src: "/p11.png",
@@ -16,13 +18,17 @@ const BestSelling = () => {
       title: "Brown Shirt",
       description: "Best Quality t-shirt for men",
       price: 250,
+      category: "tops",
+      slug: "brown shirt",
     },
     {
       src: "/shoes5.avif",
       alt: "Best shoes",
-      title: "Brown Shirt",
+      title: "Brown Shoes",
       description: "Best Quality shoes for men",
       price: 500,
+      category: "tops",
+      slug: "brown shoes",
     },
   ];
 
@@ -41,12 +47,14 @@ const BestSelling = () => {
       <div className="flex flex-wrap justify-center gap-5">
         {bestSell.map((items, i) => (
           <BestSellingCard
-          key={i}
+            key={i}
             src={items.src}
             alt={items.alt}
             descripton={items.description}
             title={items.title}
             price={items.price}
+            category={items.category}
+            slug={items.slug}
           />
         ))}
       </div>

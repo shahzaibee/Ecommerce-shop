@@ -4,88 +4,31 @@ import React from "react";
 const Category = () => {
   const bestSell = [
     {
-      src: "/f15.avif",
-      alt: "Black t.shirt",
-      title: "Black Shirt",
-      description: "Best Quality t-shirt for women",
-      price: 150,
-    },
-    {
-      src: "/female2.webp",
-      alt: "Black t.shirt",
-      title: "Black Shirt",
-      description: "Best Quality t-shirt for women",
-      price: 150,
-    },
-    {
-      src: "/female3.webp",
-      alt: "Black t.shirt",
-      title: "Black Shirt",
-      description: "Best Quality t-shirt for women",
-      price: 150,
-    },
-    {
-      src: "/female1.webp",
-      alt: "Black t.shirt",
-      title: "Black Shirt",
-      description: "Best Quality t-shirt for women",
-      price: 150,
-    },
-    {
-      src: "/female5.webp",
-      alt: "Black t.shirt",
-      title: "Black Shirt",
-      description: "Best Quality t-shirt for women",
-      price: 150,
-    },
-    {
-      src: "/G1.avif",
-      alt: "Black t.shirt",
-      title: "Black Shirt",
-      description: "Best Quality t-shirt for women",
-      price: 150,
-    },
-    {
       src: "/f2.avif",
       alt: "Black t.shirt",
-      title: "Black Shirt",
+      title: "Blue Shirt",
       description: "Best Quality t-shirt for women",
       price: 150,
-    },
-    {
-      src: "/f3.avif",
-      alt: "Black t.shirt",
-      title: "Black Shirt",
-      description: "Best Quality t-shirt for women",
-      price: 150,
-    },
-    {
-      src: "/f4.avif",
-      alt: "Black t.shirt",
-      title: "Black Shirt",
-      description: "Best Quality t-shirt for women",
-      price: 150,
+      category: "tops",
+      slug: "blue shirt",
     },
     {
       src: "/f5.avif",
-      alt: "Black t.shirt",
-      title: "Black Shirt",
-      description: "Best Quality t-shirt for women",
-      price: 150,
+      alt: "Brown t.shirt",
+      title: "Gray Shirt",
+      description: "Best Quality t-shirt for men",
+      price: 250,
+      category: "tops",
+      slug: "Gray shirt",
     },
     {
-      src: "/f7.avif",
-      alt: "Black t.shirt",
-      title: "Black Shirt",
-      description: "Best Quality t-shirt for women",
-      price: 150,
-    },
-    {
-      src: "/f18.avif",
-      alt: "Black t.shirt",
-      title: "Black Shirt",
-      description: "Best Quality t-shirt for women",
-      price: 150,
+      src: "/f17.avif",
+      alt: "Best shoes",
+      title: "Green shirt",
+      description: "Best Quality shoes for men",
+      price: 500,
+      category: "tops",
+      slug: "green shirt",
     },
   ];
 
@@ -111,6 +54,8 @@ const Category = () => {
             descripton={items.description}
             title={items.title}
             price={items.price}
+            category={items.category}
+            slug={items.slug}
           />
         ))}
       </div>
