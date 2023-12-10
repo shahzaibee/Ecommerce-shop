@@ -14,7 +14,7 @@ const Category = () => {
     },
     {
       src: "/f5.avif",
-      alt: "Brown t.shirt",
+      alt: "Brown t.shirt", 
       title: "Gray Shirt",
       description: "Best Quality t-shirt for men",
       price: 250,
@@ -33,7 +33,7 @@ const Category = () => {
   ];
 
   return (
-    <div className="mb-[100px] mt-[100px] mx-auto">
+    <div className="mb-[100px] mt-[50px] mx-auto">
       {/* Heading */}
       <div className="text-center mb-10">
         <h1 className=" text-myBlackHead scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl capitalize">

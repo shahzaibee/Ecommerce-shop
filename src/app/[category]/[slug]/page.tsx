@@ -5,7 +5,7 @@ import { FaHeart, FaShoppingCart, FaPlus, FaMinus } from "react-icons/fa";
 
 const Slug = () => {
   return (
-    <section className="text-gray-600 body-font overflow-hidden">
+    <section className="text-gray-600 body-font overflow-hidden mb-[100px] mt-[50px]">
       <div className="container px-5 py-24 mx-auto">
         <div className="lg:w-4/5 mx-auto flex flex-wrap">
           {/* Image */}
