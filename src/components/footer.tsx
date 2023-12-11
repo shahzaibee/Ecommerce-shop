@@ -233,6 +233,7 @@ const Footer = () => {
             </span>
           </div>
         </div>
+        <h1>Video Page</h1>
       </footer>
     </div>
   );

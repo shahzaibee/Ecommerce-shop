@@ -22,7 +22,7 @@ const BestSellingCard = ({
   slug: string;
 }) => {
   return (
-    <div className="w-[350px] h-[35rem] p-4 mx-auto shadow-2xl border-2 border-slate-200 rounded-xl relative group">
+    <div className="max-w-[350px] h-[35rem] p-4 mx-auto shadow-2xl border-2 border-slate-200 rounded-xl relative group">
       <Link href={`/${category}/${slug}`}>
         {/*  image div*/}
         <div className="block h-[23rem] rounded overflow-hidden">

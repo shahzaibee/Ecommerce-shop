@@ -8,7 +8,9 @@
 
 .promo-1 {
   background-image: url("../../public//promo1.avif");
+  filter: contrast(1.25);
 }
 .promo-2 {
   background-image: url("../../public/promo2.avif");
+  filter: contrast(1.25);
 }
