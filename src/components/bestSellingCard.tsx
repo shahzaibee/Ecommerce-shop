@@ -12,6 +12,7 @@ const BestSellingCard = ({
   price,
   category,
   slug,
+  discount,
 }: {
   src: string;
   alt: string;
@@ -20,9 +21,10 @@ const BestSellingCard = ({
   price: number;
   category: string;
   slug: string;
+  discount: number;
 }) => {
   return (
-    <div className="max-w-[350px] h-[35rem] p-4 mx-auto shadow-2xl border-2 border-slate-200 rounded-xl relative group">
+    <div className="max-w-[350px] h-[35rem] p-4 mx-auto shadow-2xl border-2 border-myWhite rounded-xl relative group">
       <Link href={`/${category}/${slug}`}>
         {/*  image div*/}
         <div className="block h-[23rem] rounded overflow-hidden">
@@ -35,16 +37,30 @@ const BestSellingCard = ({
           />
         </div>
         {/* typography div */}
-        <div className="-mt-4">
-          <h2 className="scroll-m-20 border-b pb-2 text-lg font-semibold line-clamp-1 tracking-tight transition-colors first:mt-0 text-myBlackHead">
+        <div className="-mt-1 space-y-5 ">
+          <h2 className="scroll-m-20 border-b text-lg font-semibold line-clamp-1 tracking-tight transition-colors first:mt-0 text-myBlackHead">
             {title}
           </h2>
           <p className="mt-2 scroll-m-20 text-sm font-semibold tracking-tight text-myBlackpara line-clamp-1">
             {descripton}
           </p>
-          <p className="mt-2 scroll-m-20 text-base font-semibold tracking-tight text-myBlackHead line-clamp-1">
-            ${price}
-          </p>
+          {/* pricing */}
+          <div className="flex justify-between items-center">
+            <p
+              className={`mt-2 scroll-m-20 text-base font-semibold tracking-tight text-myBlackHead line-clamp-1 ${
+                discount > 0 &&
+                "line-through decoration-2 decoration-myOrange/70"
+              }`}
+            >
+              ${price}
+            </p>
+            {/* discounted value */}
+            {discount > 0 && (
+              <p className="mt-2 scroll-m-20 text-base font-semibold tracking-tight text-myBlackHead line-clamp-1">
+                ${price - (price * discount) / 100}
+              </p>
+            )}
+          </div>
         </div>
         {/* Button div */}
         <div>

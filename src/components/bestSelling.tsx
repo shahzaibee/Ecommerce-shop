@@ -2,6 +2,13 @@ import Image from "next/image";
 import React from "react";
 import BestSellingCard from "./bestSellingCard";
 const BestSelling = () => {
+
+
+// import { useAppSelector } from "@/app/store/hooks";
+// const BestSelling = () => {
+//   const product = useAppSelector((state) => state.product);
+//   const bestSell = product.slice(0, 3);
+
   const bestSell = [
     {
       src: "/p1.png",
@@ -55,6 +62,7 @@ const BestSelling = () => {
             price={items.price}
             category={items.category}
             slug={items.slug}
+            // discount={items.discount}
           />
         ))}
       </div>
@@ -63,3 +71,8 @@ const BestSelling = () => {
 };
 
 export default BestSelling;
+
+
+
+
+

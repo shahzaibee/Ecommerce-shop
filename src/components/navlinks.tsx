@@ -1,5 +1,4 @@
 "use client";
-
 import * as React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -59,7 +58,7 @@ export function NavigationMenuDemo() {
           <NavigationMenuContent>
             <ul className="bg-myWhite grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
-                <>
+                <div key={component.title}>
                   <Link
                     key={component.title}
                     href={component.href}
@@ -70,7 +69,7 @@ export function NavigationMenuDemo() {
                       {component.description}
                     </ListItem>
                   </Link>
-                </>
+                </div>
               ))}
             </ul>
           </NavigationMenuContent>
