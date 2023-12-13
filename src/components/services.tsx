@@ -22,7 +22,7 @@ const Services = () => {
                 alt="Delivery"
                 width={100}
                 height={100}
-                className="w-28 h-20 rounded-full"
+                className="w-28 h-20"
               />
             </div>
             <div className="flex-grow">
@@ -42,7 +42,7 @@ const Services = () => {
                 alt="Delivery"
                 width={100}
                 height={100}
-                className="w-28 h-20 rounded-full"
+                className="w-28 h-20"
               />
             </div>
             <div className="flex-grow">
@@ -62,7 +62,7 @@ const Services = () => {
                 alt="Delivery"
                 width={100}
                 height={100}
-                className="w-28 h-20 rounded-full"
+                className="w-28 h-20"
               />
             </div>
             <div className="flex-grow">
@@ -71,7 +71,7 @@ const Services = () => {
               </h2>
               <p className="text-myBlackpara  group-hover:text-myBlackpara/80  line-clamp-2 scroll-m-20 text-base font-semibold tracking-tight">
                 {/* Free Delivery on order Above $1000 */}
-                Get Money Back Gaurantee on Damage Products 
+                Get Money Back Gaurantee on Damage Products
               </p>
             </div>
           </div>

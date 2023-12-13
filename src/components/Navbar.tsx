@@ -71,7 +71,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-end flex items-center lg:items-center pl-10 lg:pl-96">
-        <div className="dropdown dropdown-end  pr-6 md:pr-3">
+        <div className="dropdown dropdown-end pr-6 md:pr-3">
           <div
             tabIndex={0}
             role="button"

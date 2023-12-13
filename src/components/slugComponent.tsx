@@ -1,46 +1,33 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-const SlugComponent = () => {
+const SlugComponent = ({
+  image,
+}: string | string[] | StaticImageData | any) => {
   const [path, setpath] = useState("");
   return (
     <div className="">
       <Image
-        src={path ? path : "/p1.png"}
+        src={path ? path : image[0]}
         alt="ecommerce"
         width={400}
         height={400}
         className="h-[400px] object-cover object-top shadow overflow-hidden shadow-slate-400 border-1 "
       />
       <div className="flex items-center justify-evenly mx-auto mt-7 object-cover rounded-md">
-        <div className="cursor-pointer w-20 h-10">
-          <Image
-            src={"/F15.avif"}
-            width={100}
-            height={100}
-            alt="abc"
-            onClick={() => setpath(require("../../public/F15.avif"))}
-          />
-        </div>
-        <div className="cursor-pointer w-24 h-10">
-          <Image
-            src={"/F17.avif"}
-            width={100}
-            height={100}
-            alt="abc"
-            onClick={() => setpath(require("../../public/F17.avif"))}
-          />
-        </div>
-        <div className="cursor-pointer w-20 h-10">
-          <Image
-            src={"/F18.avif"}
-            width={100}
-            height={100}
-            alt="abc"
-            onClick={() => setpath(require("../../public/F18.avif"))}
-          />
-        </div>
+        {Array.isArray(image) &&
+          image.map((item: string, i: any) => (
+            <div key={i} className="cursor-pointer w-20 h-10">
+              <Image
+                src={item}
+                width={100}
+                height={100}
+                alt="abc"
+                onClick={() => setpath(item)}
+              />
+            </div>
+          ))}
       </div>
     </div>
   );

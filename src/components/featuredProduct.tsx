@@ -10,8 +10,7 @@ import { useAppSelector } from "@/app/store/hooks";
 const FeaturedProduct = () => {
   // my data
 
-
-const bestSell = useAppSelector((state)=>state.product)
+  const bestSell = useAppSelector((state) => state.product);
 
   // const bestSell = [
   //   {
@@ -111,7 +110,7 @@ const bestSell = useAppSelector((state)=>state.product)
       </div>
       {/* carousel */}
       <Slider {...settings}>
-        {bestSell.map((items:any, i) => (
+        {bestSell.map((items: any, i) => (
           <BestSellingCard
             key={i}
             src={items.image}

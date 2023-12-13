@@ -1,28 +1,4 @@
 import { Product } from "./type";
-import f21 from "../../../public/f21.webp";
-import f22 from "../../../public/f22.webp";
-import f19 from "../../../public/F19.webp";
-import f23 from "../../../public/f23.webp";
-import f24 from "../../../public/f24.jpeg";
-import f25 from "../../../public/f25.jpeg";
-import J1 from "../../../public/J1.jpeg";
-import J2 from "../../../public/j2.jpeg";
-import J3 from "../../../public/J3.jpeg";
-import J4 from "../../../public/J4.jpeg";
-import J5 from "../../../public/j5.jpeg";
-import J6 from "../../../public/j6.jpeg";
-import a1 from "../../../public/ac1.avif";
-import a2 from "../../../public/ac2.avif";
-import a3 from "../../../public/ac3.webp";
-import a4 from "../../../public/ac4.webp";
-import a5 from "../../../public/avif5.avif";
-import a6 from "../../../public/accesories2.avif";
-import s1 from "../../../public/shoes.avif";
-import s2 from "../../../public/shoes2.avif";
-import s3 from "../../../public/shoes3.avif";
-import s4 from "../../../public/shoes4.avif";
-import s5 from "../../../public/shoes5.avif";
-import s6 from "../../../public/shoes6.webp";
 
 export const products: Product[] = [
   // tops
@@ -30,7 +6,8 @@ export const products: Product[] = [
     id: 1,
     title: "Earthy Elegance: Classic Brown Plaid Shirt & Tops",
     // image: ["/F4.avif", "/F9.avif"],
-    image: f19,
+    image: require("../../../public/F19.webp"),
+    // image:[require("../../../public/F19.webp")],
     slug: "brown-check-shirt",
     price: 300,
     discount: 0,
@@ -45,7 +22,7 @@ export const products: Product[] = [
     id: 2,
     title: "Earthy Elegance: Classic Brown Plaid Shirt & Tops",
     // image: ["/F4.avif", "/F9.avif"],
-    image: f21,
+    image: require("../../../public/f21.webp"),
     slug: "brown-check-shirt",
     price: 300,
     discount: 0,
@@ -60,7 +37,7 @@ export const products: Product[] = [
     id: 3,
     title: "Earthy Elegance: Classic Brown Plaid Shirt & Tops",
     // image: ["/F4.avif", "/F9.avif"],
-    image: f22,
+    image: require("../../../public/f22.webp"),
     slug: "brown-check-shirt",
     price: 300,
     discount: 0,
@@ -75,7 +52,7 @@ export const products: Product[] = [
     id: 4,
     title: "Earthy Elegance: Classic Brown Plaid Shirt & Tops",
     // image: ["/F4.avif", "/F9.avif"],
-    image: f23,
+    image: require("../../../public/f23.webp"),
     slug: "brown-check-shirt",
     price: 300,
     discount: 0,
@@ -90,7 +67,7 @@ export const products: Product[] = [
     id: 5,
     title: "Earthy Elegance: Classic Brown Plaid Shirt & Tops",
     // image: ["/F4.avif", "/F9.avif"],
-    image: f24,
+    image: require("../../../public/f24.jpeg"),
     slug: "brown-check-shirt",
     price: 300,
     discount: 0,
@@ -105,7 +82,7 @@ export const products: Product[] = [
     id: 6,
     title: "Earthy Elegance: Classic Brown Plaid Shirt & Tops",
     // image: ["/F4.avif", "/F9.avif"],
-    image: f25,
+    image: require("../../../public/f25.jpeg"),
     slug: "brown-check-shirt",
     price: 300,
     discount: 0,
@@ -122,7 +99,7 @@ export const products: Product[] = [
     id: 7,
     title: "Denim Classic Jeans for Effortless Style",
     // image: ["/m10.avif", "/m11.avif", "/M2.avif", "/M6.avif", "/M7.avif"],
-    image: J1,
+    image: require("../../../public/J1.jpeg"),
     slug: "denim-classic-jeans-for-effortless-style",
     price: 450,
     discount: 0,
@@ -137,7 +114,7 @@ export const products: Product[] = [
     id: 8,
     title: "Denim Classic Jeans for Effortless Style",
     // image: ["/m10.avif", "/m11.avif", "/M2.avif", "/M6.avif", "/M7.avif"],
-    image: J2,
+    image: require("../../../public/j2.jpeg"),
     slug: "denim-classic-jeans-for-effortless-style",
     price: 450,
     discount: 0,
@@ -152,7 +129,7 @@ export const products: Product[] = [
     id: 9,
     title: "Denim Classic Jeans for Effortless Style",
     // image: ["/m10.avif", "/m11.avif", "/M2.avif", "/M6.avif", "/M7.avif"],
-    image: J3,
+    image: require("../../../public/j3.jpeg"),
     slug: "denim-classic-jeans-for-effortless-style",
     price: 450,
     discount: 0,
@@ -167,7 +144,7 @@ export const products: Product[] = [
     id: 10,
     title: "Denim Classic Jeans for Effortless Style",
     // image: ["/m10.avif", "/m11.avif", "/M2.avif", "/M6.avif", "/M7.avif"],
-    image: J4,
+    image: require("../../../public/J4.jpeg"),
     slug: "denim-classic-jeans-for-effortless-style",
     price: 450,
     discount: 0,
@@ -182,7 +159,7 @@ export const products: Product[] = [
     id: 11,
     title: "Denim Classic Jeans for Effortless Style",
     // image: ["/m10.avif", "/m11.avif", "/M2.avif", "/M6.avif", "/M7.avif"],
-    image: J5,
+    image: require("../../../public/j5.jpeg"),
     slug: "denim-classic-jeans-for-effortless-style",
     price: 450,
     discount: 0,
@@ -197,7 +174,7 @@ export const products: Product[] = [
     id: 12,
     title: "Denim Classic Jeans for Effortless Style",
     // image: ["/m10.avif", "/m11.avif", "/M2.avif", "/M6.avif", "/M7.avif"],
-    image: J6,
+    image: require("../../../public/j6.jpeg"),
     slug: "denim-classic-jeans-for-effortless-style",
     price: 450,
     discount: 0,
@@ -213,7 +190,7 @@ export const products: Product[] = [
     id: 13,
     title: "Elegant Essentials: Accessorize Your Style",
     // image: ["/ac1.avif", "/ac2.avif", "ac4.avif", "ac4.avif"],
-    image: a1,
+    image: require("../../../public/ac1.avif"),
     slug: "elegant-essentials-accessorize-your-style",
     price: 500,
     discount: 0,
@@ -228,7 +205,7 @@ export const products: Product[] = [
     id: 14,
     title: "Elegant Essentials: Accessorize Your Style",
     // image: ["/ac1.avif", "/ac2.avif", "ac4.avif", "ac4.avif"],
-    image: a2,
+    image: require("../../../public/ac2.avif"),
     slug: "elegant-essentials-accessorize-your-style",
     price: 500,
     discount: 0,
@@ -243,7 +220,7 @@ export const products: Product[] = [
     id: 15,
     title: "Elegant Essentials: Accessorize Your Style",
     // image: ["/ac1.avif", "/ac2.avif", "ac4.avif", "ac4.avif"],
-    image: a3,
+    image: require("../../../public/ac3.webp"),
     slug: "elegant-essentials-accessorize-your-style",
     price: 500,
     discount: 0,
@@ -258,7 +235,7 @@ export const products: Product[] = [
     id: 16,
     title: "Elegant Essentials: Accessorize Your Style",
     // image: ["/ac1.avif", "/ac2.avif", "ac4.avif", "ac4.avif"],
-    image: a4,
+    image: require("../../../public/ac4.webp"),
     slug: "elegant-essentials-accessorize-your-style",
     price: 500,
     discount: 0,
@@ -273,7 +250,7 @@ export const products: Product[] = [
     id: 17,
     title: "Elegant Essentials: Accessorize Your Style",
     // image: ["/ac1.avif", "/ac2.avif", "ac4.avif", "ac4.avif"],
-    image: a5,
+    image: require("../../../public/avif5.avif"),
     slug: "elegant-essentials-accessorize-your-style",
     price: 500,
     discount: 0,
@@ -288,7 +265,7 @@ export const products: Product[] = [
     id: 18,
     title: "Elegant Essentials: Accessorize Your Style",
     // image: ["/ac1.avif", "/ac2.avif", "ac4.avif", "ac4.avif"],
-    image: a6,
+    image: require("../../../public/accesories2.avif"),
     slug: "elegant-essentials-accessorize-your-style",
     price: 500,
     discount: 0,
@@ -310,7 +287,7 @@ export const products: Product[] = [
     //   "shoes4.avif",
     //   "shoes5.avif",
     // ],
-    image: s1,
+    image: require("../../../public/shoes.avif"),
     slug: "sleek-leather-oxford-shoes",
     price: 350,
     discount: 10,
@@ -322,7 +299,7 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 19,
+    id: 20,
     title: "Sleek Leather Oxford Shoes",
     // image: [
     //   "/shoes.avif",
@@ -331,7 +308,7 @@ export const products: Product[] = [
     //   "shoes4.avif",
     //   "shoes5.avif",
     // ],
-    image: s2,
+    image: require("../../../public/shoes2.avif"),
     slug: "sleek-leather-oxford-shoes",
     price: 350,
     discount: 10,
@@ -343,7 +320,7 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 19,
+    id: 21,
     title: "Sleek Leather Oxford Shoes",
     // image: [
     //   "/shoes.avif",
@@ -352,7 +329,7 @@ export const products: Product[] = [
     //   "shoes4.avif",
     //   "shoes5.avif",
     // ],
-    image: s3,
+    image: require("../../../public/shoes3.avif"),
     slug: "sleek-leather-oxford-shoes",
     price: 350,
     discount: 10,
@@ -364,7 +341,7 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 19,
+    id: 22,
     title: "Sleek Leather Oxford Shoes",
     // image: [
     //   "/shoes.avif",
@@ -373,7 +350,7 @@ export const products: Product[] = [
     //   "shoes4.avif",
     //   "shoes5.avif",
     // ],
-    image: s4,
+    image: require("../../../public/shoes4.avif"),
     slug: "sleek-leather-oxford-shoes",
     price: 350,
     discount: 10,
@@ -385,7 +362,7 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 19,
+    id: 23,
     title: "Sleek Leather Oxford Shoes",
     // image: [
     //   "/shoes.avif",
@@ -394,7 +371,7 @@ export const products: Product[] = [
     //   "shoes4.avif",
     //   "shoes5.avif",
     // ],
-    image: s5,
+    image: require("../../../public/shoes5.avif"),
     slug: "sleek-leather-oxford-shoes",
     price: 350,
     discount: 10,
@@ -406,7 +383,7 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 19,
+    id: 24,
     title: "Sleek Leather Oxford Shoes",
     // image: [
     //   "/shoes.avif",
@@ -415,7 +392,7 @@ export const products: Product[] = [
     //   "shoes4.avif",
     //   "shoes5.avif",
     // ],
-    image: s6,
+    image: require("../../../public/shoes6.webp"),
     slug: "sleek-leather-oxford-shoes",
     price: 350,
     discount: 10,
