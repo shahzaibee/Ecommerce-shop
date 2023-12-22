@@ -6,9 +6,8 @@ import { useAppSelector } from "../store/hooks";
 
 const CartPage = () => {
   const cartArray = useAppSelector((state) => state.cart);
-  const total = cartArray.reduce((total, arr) => {
-    return total + (arr.price - (arr.price * arr.discount) / 100) * arr.qty;
-  }, 0);
+  const total = cartArray.reduce((total: any, arr: any) => {
+    return total + (arr.price - (arr.price * arr.discount) / 100) * arr.qty}, 0)
   return (
     <div className="grid lg:grid-cols-3 grid-cols-1">
       {/* items */}
