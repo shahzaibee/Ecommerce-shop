@@ -2,15 +2,13 @@
 import SlugComponent from "@/components/slugComponent";
 import { Button } from "@/components/ui/button";
 import React, { useState } from "react";
-import { FaHeart, FaShoppingCart, FaPlus, FaMinus } from "react-icons/fa";
+import { FaHeart, FaPlus, FaMinus } from "react-icons/fa";
 import { useAppSelector } from "../../store/hooks";
-import { useDispatch } from "react-redux";
-import { addToCart } from "@/app/store/features/cart";
+import AddTocartToast from "@/components/addTocartToast";
 
 const SlugPage = ({ params }: { params: { slug: string } }) => {
-  const product = useAppSelector((state) => state.product);
-  const slug = product.filter((val) => val.slug === params.slug);
-  const dispatch = useDispatch();
+const product = useAppSelector((state) => state.product);
+const slug = product.filter((val) => val.slug === params.slug);
 
   const [cartItem, setCartItem] = useState({
     id: slug[0].id,
@@ -162,13 +160,14 @@ const SlugPage = ({ params }: { params: { slug: string } }) => {
                 )}
               </div>
               {/* Add to cart */}
-              <Button
+              {/* <Button
                 onClick={() => dispatch(addToCart(cartItem))}
                 className="group bg-myBlackHead hover:bg-transparent text-myWhite hover:text-myBlackHead scroll-m-20 text-xs font-semibold tracking-tight rounded-xl"
               >
                 <FaShoppingCart className="mr-4 h-4 w-4 group-hover:text-myOrange duration-300" />
                 Add to Cart
-              </Button>
+              </Button> */}
+              <AddTocartToast cartItem={cartItem} />
             </div>
             {/* Buy now */}
             <Button className="group w-full mt-4 bg-myBlackHead hover:bg-transparent text-myWhite hover:text-myBlackHead scroll-m-20 text-xs font-semibold tracking-tight rounded-xl">

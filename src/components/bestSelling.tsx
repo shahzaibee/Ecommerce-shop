@@ -1,12 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import BestSellingCard from "./bestSellingCard";
-const BestSelling = () => {
-  // import { useAppSelector } from "@/app/store/hooks";
-  // const BestSelling = () => {
-  //   const product = useAppSelector((state) => state.product);
-  //   const bestSell = product.slice(0, 3);
 
+const BestSelling = () => {
   const bestSell = [
     {
       src: "/p1.png",
@@ -15,13 +11,13 @@ const BestSelling = () => {
       description: "Best Quality t-shirt for women",
       price: 150,
       category: "tops",
-      slug: "black-shirt",
+      slug: "black-shirtsss",
       discount: 0,
     },
     {
       src: "/p11.png",
       alt: "Brown t.shirt",
-      title: "Brown Shirt",
+      title: "Brown Shirtsssss",
       description: "Best Quality t-shirt for men",
       price: 250,
       category: "tops",
