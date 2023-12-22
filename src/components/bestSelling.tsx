@@ -2,12 +2,10 @@ import Image from "next/image";
 import React from "react";
 import BestSellingCard from "./bestSellingCard";
 const BestSelling = () => {
-
-
-// import { useAppSelector } from "@/app/store/hooks";
-// const BestSelling = () => {
-//   const product = useAppSelector((state) => state.product);
-//   const bestSell = product.slice(0, 3);
+  // import { useAppSelector } from "@/app/store/hooks";
+  // const BestSelling = () => {
+  //   const product = useAppSelector((state) => state.product);
+  //   const bestSell = product.slice(0, 3);
 
   const bestSell = [
     {
@@ -17,7 +15,8 @@ const BestSelling = () => {
       description: "Best Quality t-shirt for women",
       price: 150,
       category: "tops",
-      slug: "black shirt",
+      slug: "black-shirt",
+      discount: 0,
     },
     {
       src: "/p11.png",
@@ -26,7 +25,8 @@ const BestSelling = () => {
       description: "Best Quality t-shirt for men",
       price: 250,
       category: "tops",
-      slug: "brown shirt",
+      slug: "brown-shirt",
+      discount: 10,
     },
     {
       src: "/shoes5.avif",
@@ -35,7 +35,8 @@ const BestSelling = () => {
       description: "Best Quality shoes for men",
       price: 500,
       category: "tops",
-      slug: "brown shoes",
+      slug: "brown-shoes",
+      discount: 0,
     },
   ];
 
@@ -62,7 +63,7 @@ const BestSelling = () => {
             price={items.price}
             category={items.category}
             slug={items.slug}
-            // discount={items.discount}
+            discount={items.discount}
           />
         ))}
       </div>
@@ -71,8 +72,3 @@ const BestSelling = () => {
 };
 
 export default BestSelling;
-
-
-
-
-

@@ -1,14 +1,29 @@
 "use client";
 import SlugComponent from "@/components/slugComponent";
 import { Button } from "@/components/ui/button";
-import React from "react";
+import React, { useState } from "react";
 import { FaHeart, FaShoppingCart, FaPlus, FaMinus } from "react-icons/fa";
 import { useAppSelector } from "../../store/hooks";
+import { useDispatch } from "react-redux";
+import { addToCart } from "@/app/store/features/cart";
 
 const SlugPage = ({ params }: { params: { slug: string } }) => {
   const product = useAppSelector((state) => state.product);
-
   const slug = product.filter((val) => val.slug === params.slug);
+  const dispatch = useDispatch();
+
+  const [cartItem, setCartItem] = useState({
+    id: slug[0].id,
+    title: slug[0].title,
+    image: slug[0].image[0],
+    slug: slug[0].slug,
+    price: slug[0].price,
+    discount: slug[0].discount,
+    category: slug[0].category,
+    size: slug[0].size[0],
+    color: slug[0].color[0],
+    qty: slug[0].qty,
+  });
 
   return (
     <div>
@@ -64,6 +79,7 @@ const SlugPage = ({ params }: { params: { slug: string } }) => {
                 <span className="mr-3 scroll-m-20 text-base text-myBlackHead font-semibold tracking-tight">
                   {slug[0].color.map((item, i) => (
                     <button
+                      onClick={() => setCartItem({ ...cartItem, color: item })}
                       key={i}
                       style={{ backgroundColor: item }}
                       className="border-2 border-gray-300 rounded-full mr-1 w-6 h-6 focus:outline-none active:border-black focus:border-black "
@@ -77,10 +93,13 @@ const SlugPage = ({ params }: { params: { slug: string } }) => {
                   Size
                 </span>
                 <div className="form-control lg:w-full w-[99px] max-w-[200px]">
-                  <select className="select select-bordered">
-                    <option disabled selected>
-                      Select size
-                    </option>
+                  <select
+                    onChange={(e) =>
+                      setCartItem({ ...cartItem, size: e.target.value })
+                    }
+                    className="select select-bordered"
+                  >
+                    <option>Select size</option>
                     {slug[0].size.map((item, i) => (
                       <option key={i}>{item}</option>
                     ))}
@@ -93,15 +112,28 @@ const SlugPage = ({ params }: { params: { slug: string } }) => {
               <span className="mr-3 scroll-m-20 text-base  text-myBlackHead font-semibold tracking-tight">
                 Quantity
               </span>
-              <Button className=" w-fit h-fit  group bg-myBlackHead hover:bg-transparent text-myWhite hover:text-myBlackHead scroll-m-20 text-xs font-semibold tracking-tight rounded-xl">
+              <Button
+                onClick={() =>
+                  setCartItem({
+                    ...cartItem,
+                    qty: cartItem.qty <= 1 ? 1 : --cartItem.qty,
+                  })
+                }
+                className=" w-fit h-fit  group bg-myBlackHead hover:bg-transparent text-myWhite hover:text-myBlackHead scroll-m-20 text-xs font-semibold tracking-tight rounded-xl"
+              >
                 <FaMinus className="mr-4 h-4 w-4 group-hover:text-myOrange duration-300" />
                 Less
               </Button>
               <div className="mr-2 ml-2 scroll-m-20 text-base font-semibold tracking-tight">
-                {slug[0].qty}
+                {cartItem.qty}
               </div>
               {/*Button */}
-              <Button className=" w-fit h-fit  group bg-myBlackHead hover:bg-transparent text-myWhite hover:text-myBlackHead scroll-m-20 text-xs font-semibold tracking-tight rounded-xl">
+              <Button
+                onClick={() =>
+                  setCartItem({ ...cartItem, qty: ++cartItem.qty })
+                }
+                className=" w-fit h-fit  group bg-myBlackHead hover:bg-transparent text-myWhite hover:text-myBlackHead scroll-m-20 text-xs font-semibold tracking-tight rounded-xl"
+              >
                 <FaPlus className="mr-4 h-4 w-4 group-hover:text-myOrange duration-300" />
                 Add
               </Button>
@@ -113,22 +145,27 @@ const SlugPage = ({ params }: { params: { slug: string } }) => {
               <div>
                 <span
                   className={`scroll-m-20 text-2xl font-semibold tracking-tight text-myBlackHead ${
-                    slug[0].discount > 0 &&
+                    cartItem.discount > 0 &&
                     "line-through decoration-2 decoration-myOrange/70"
                   } `}
                 >
-                  ${slug[0].price}
+                  ${cartItem.price * cartItem.qty}
                 </span>
-
                 {/* discounted value */}
-                {slug[0].discount > 0 && (
-                  <span className="scroll-m-20 text-2xl font-semibold tracking-tight text-myBlackHead ml-5">
-                    ${slug[0].price - (slug[0].price * slug[0].discount) / 100}
+                {cartItem.discount > 0 && (
+                  <span className="scroll-m-20 text-2xl font-semibold tracking-tight text-myBlackHead ml-3">
+                    $
+                    {(cartItem.price -
+                      (cartItem.price * cartItem.discount) / 100) *
+                      cartItem.qty}
                   </span>
                 )}
               </div>
               {/* Add to cart */}
-              <Button className="group bg-myBlackHead hover:bg-transparent text-myWhite hover:text-myBlackHead scroll-m-20 text-xs font-semibold tracking-tight rounded-xl">
+              <Button
+                onClick={() => dispatch(addToCart(cartItem))}
+                className="group bg-myBlackHead hover:bg-transparent text-myWhite hover:text-myBlackHead scroll-m-20 text-xs font-semibold tracking-tight rounded-xl"
+              >
                 <FaShoppingCart className="mr-4 h-4 w-4 group-hover:text-myOrange duration-300" />
                 Add to Cart
               </Button>

@@ -1,10 +1,9 @@
 import SlugPage from "./slugPage";
 
-
-const Slug = ({params}:{params:{slug:string}}) => {
+const Slug = ({ params }: { params: { slug: string } }) => {
   return (
     <section className="text-gray-600 body-font overflow-hidden mb-[100px] mt-[50px]">
-     <SlugPage params={params}/>
+      <SlugPage params={params} />
     </section>
   );
 };

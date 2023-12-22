@@ -13,7 +13,7 @@ const Promotion = () => {
         </div>
       </div>
       {/* Promotion start here */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
         {/* First child here */}
         <div className="hero h-[25rem] promo-1">
           <div className="hero-overlay bg-opacity-80"></div>

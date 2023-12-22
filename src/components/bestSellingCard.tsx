@@ -24,7 +24,7 @@ const BestSellingCard = ({
   discount: number;
 }) => {
   return (
-    <div className="max-w-[350px] h-[35rem] p-4 mx-auto shadow-2xl border-2 border-myWhite rounded-xl relative group">
+    <div className="max-w-[350px] h-[35rem] p-4 mx-auto shadow-2xl  border-2 border-myWhite rounded-xl relative group">
       <Link href={`/${category}/${slug}`}>
         {/*  image div*/}
         <div className="block h-[23rem] rounded overflow-hidden">
@@ -72,6 +72,9 @@ const BestSellingCard = ({
             <FaHeart className="mr-4 h-4 w-4 group-hover:text-myOrange duration-300" />
             Buy now
           </Button>
+          {discount > 0 && (
+            <div className="p-2 text-center uppercase rounded-tl-xl myDiscount rounded-bl-xl scroll-m-20 text-xs font-semibold tracking-tight text-myWhite bg-myOrange absolute top-0 left-2 w-[87px]">{`${discount}% off`} </div>
+          )}
         </div>
       </Link>
     </div>

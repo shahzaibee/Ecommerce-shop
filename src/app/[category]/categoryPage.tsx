@@ -2,6 +2,7 @@
 import BestSellingCard from "@/components/bestSellingCard";
 import { useAppSelector } from "../store/hooks";
 import { StaticImageData } from "next/image";
+import { Product } from "../utlis/type";
 
 const Categorypage = ({ params }: { params: { category: string } }) => {
   const product = useAppSelector((state) => state.product);
@@ -25,7 +26,7 @@ const Categorypage = ({ params }: { params: { category: string } }) => {
         {bestSell.map((items: any, i) => (
           <BestSellingCard
             key={i}
-            src={items.image}
+            src={items.image[0]}
             alt={items.title}
             descripton={items.description}
             title={items.title}

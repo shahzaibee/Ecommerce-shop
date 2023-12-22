@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,55 +9,7 @@ import { useAppSelector } from "@/app/store/hooks";
 const FeaturedProduct = () => {
   // my data
 
-  const bestSell = useAppSelector((state) => state.product);
-
-  // const bestSell = [
-  //   {
-  //     src: "/p2.png",
-  //     alt: "Brown t.shirt",
-  //     title: "Brown Shirt",
-  //     description: "Best Quality t-shirt for women",
-  //     price: 250,
-  //     category: "tops",
-  //     slug: "brown Shirt",
-  //   },
-  //   {
-  //     src: "/p3.png",
-  //     alt: "Sky Blue t.shirt",
-  //     title: "Sky Blue Shirt",
-  //     description: "Best Quality t-shirt for women",
-  //     price: 350,
-  //     category: "tops",
-  //     slug: "sky Blue Shirt",
-  //   },
-  //   {
-  //     src: "/p10.png",
-  //     alt: "Pink overcoat",
-  //     title: "Pink Overcoat",
-  //     description: "Best Quality overcoat for women",
-  //     price: 420,
-  //     category: "tops",
-  //     slug: "pink overcoat",
-  //   },
-  //   {
-  //     src: "/p9.png",
-  //     alt: "Pink shirt",
-  //     title: "Pink Shirt",
-  //     description: "Best Quality t-shirt for women",
-  //     price: 420,
-  //     category: "tops",
-  //     slug: "pink shirt",
-  //   },
-  //   {
-  //     src: "/picture1.webp",
-  //     alt: "White Overcoat",
-  //     title: "White Overcoat",
-  //     description: "Best Quality overcoat for women",
-  //     price: 420,
-  //     category: "tops",
-  //     slug: "white overcoat",
-  //   },
-  // ];
+  const bestSell = useAppSelector((state) => state.product.slice(0,9));
 
   // carousel settings
   var settings = {
@@ -113,7 +64,7 @@ const FeaturedProduct = () => {
         {bestSell.map((items: any, i) => (
           <BestSellingCard
             key={i}
-            src={items.image}
+            src={items.image[0]}
             alt={items.title}
             descripton={items.description}
             title={items.title}
