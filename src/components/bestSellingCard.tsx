@@ -3,6 +3,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import { FaShoppingCart, FaHeart } from "react-icons/fa";
 import Link from "next/link";
+import BestSellingCardAddToCart from "./bestSellingCardAddToCart";
 
 const BestSellingCard = ({
   src,
@@ -63,17 +64,18 @@ const BestSellingCard = ({
           </div>
         </div>
         {/* Button div */}
+        <div className="absolute bottom-2 right-2">
+          <BestSellingCardAddToCart slug={slug} />
+        </div>
         <div>
-          <Button className="group mt-4 bg-myBlackHead hover:bg-transparent text-myWhite hover:text-myBlackHead scroll-m-20 text-xs font-semibold tracking-tight rounded-xl absolute bottom-2 right-2">
-            <FaShoppingCart className="mr-4 h-4 w-4 group-hover:text-myOrange duration-300" />
-            Add to Cart
-          </Button>
           <Button className="group mt-4 bg-myBlackHead hover:bg-transparent text-myWhite hover:text-myBlackHead scroll-m-20 text-xs font-semibold tracking-tight rounded-xl absolute bottom-2 left-2">
             <FaHeart className="mr-4 h-4 w-4 group-hover:text-myOrange duration-300" />
             Buy now
           </Button>
           {discount > 0 && (
-            <div className="p-2 text-center uppercase rounded-tl-xl myDiscount rounded-bl-xl scroll-m-20 text-xs font-semibold tracking-tight text-myWhite bg-myOrange absolute top-0 left-2 w-[87px]">{`${discount}% off`} </div>
+            <div className="p-2 text-center uppercase rounded-tl-xl myDiscount rounded-bl-xl scroll-m-20 text-xs font-semibold tracking-tight text-myWhite bg-myOrange absolute top-0 left-2 w-[87px]">
+              {`${discount}% off`}{" "}
+            </div>
           )}
         </div>
       </Link>

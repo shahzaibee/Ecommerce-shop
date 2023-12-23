@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="mb-[100px]">
       <div className="hero min-h-[90vh] custom-img bg-fixed bg-center bg-no-repeat">
-        <div className="hero-overlay bg-opacity-0 lg:bg-opacity-5"></div>
+        <div className="hero-overlay bg-opacity-20"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md mt-40 lg:mt-0 md:mt-0">
             <h1 className="mb-5 scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-myWhite">
