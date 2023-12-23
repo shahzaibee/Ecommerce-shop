@@ -302,7 +302,7 @@ export const products: Product[] = [
     category: "shoes",
     description:
       "Elevate your style with these sleek leather Oxford shoes. Crafted for both sophistication and comfort, they effortlessly complement formal and casual attire for a timeless, polished look.",
-    size: ["S", "M", "L", "XL"],
+    size: ["5", "5.5", "6", "6.5", "7"],
     color: ["#B80000", "#9BB8CD", "#994D1C"],
     qty: 1,
   },
@@ -323,7 +323,7 @@ export const products: Product[] = [
     category: "shoes",
     description:
       "Elevate your style with these sleek leather Oxford shoes. Crafted for both sophistication and comfort, they effortlessly complement formal and casual attire for a timeless, polished look.",
-    size: ["S", "M", "L", "XL"],
+    size: ["5", "5.5", "6", "6.5", "7"],
     color: ["#9BB8CD", "#C69774", "#994D1C"],
     qty: 1,
   },
@@ -344,7 +344,7 @@ export const products: Product[] = [
     category: "shoes",
     description:
       "Elevate your style with these sleek leather Oxford shoes. Crafted for both sophistication and comfort, they effortlessly complement formal and casual attire for a timeless, polished look.",
-    size: ["S", "M", "L", "XL"],
+    size: ["5", "5.5", "6", "6.5", "7"],
     color: ["#C69774", "#9BB8CD", "#994D1C"],
     qty: 1,
   },
@@ -365,7 +365,7 @@ export const products: Product[] = [
     category: "shoes",
     description:
       "Elevate your style with these sleek leather Oxford shoes. Crafted for both sophistication and comfort, they effortlessly complement formal and casual attire for a timeless, polished look.",
-    size: ["S", "M", "L", "XL"],
+    size: ["5", "5.5", "6", "6.5", "7"],
     color: ["#9BB8CD", "#9BB8CD", "#994D1C"],
     qty: 1,
   },
@@ -386,7 +386,7 @@ export const products: Product[] = [
     category: "shoes",
     description:
       "Elevate your style with these sleek leather Oxford shoes. Crafted for both sophistication and comfort, they effortlessly complement formal and casual attire for a timeless, polished look.",
-    size: ["S", "M", "L", "XL"],
+    size: ["5", "5.5", "6", "6.5", "7"],
     color: ["#C69774", "#9BB8CD", "#994D1C"],
     qty: 1,
   },
@@ -407,7 +407,7 @@ export const products: Product[] = [
     category: "shoes",
     description:
       "Elevate your style with these sleek leather Oxford shoes. Crafted for both sophistication and comfort, they effortlessly complement formal and casual attire for a timeless, polished look.",
-    size: ["S", "M", "L", "XL"],
+    size: ["5", "5.5", "6", "6.5", "7"],
     color: ["#E26EE5", "#9BB8CD", "#994D1C"],
     qty: 1,
   },
