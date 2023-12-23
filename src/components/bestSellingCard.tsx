@@ -34,6 +34,7 @@ const BestSellingCard = ({
             alt="Error to load image"
             width={400}
             height={400}
+            priority={true}
             className="h-[350px] object-cover object-top"
           />
         </div>

@@ -34,7 +34,7 @@ export const products: Product[] = [
     id: 3,
     title: "Earthy Elegance: Classic Brown Plaid Shirt & Tops",
     image: ["/F18.avif", "/F9.avif", "/F4.avif"],
-    slug: "brown-check-shirtx",
+    slug: "brown-check-shirtz",
     price: 360,
     discount: 30,
     category: "tops",
@@ -89,20 +89,6 @@ export const products: Product[] = [
   {
     id: 7,
     title: "Earthy Elegance: Classic Brown Plaid Shirt & Tops",
-    image: ["/J2.jpeg", "/J1.jpeg"],
-    slug: "brown-check-shirt--",
-    price: 400,
-    discount: 20,
-    category: "tops",
-    description:
-      "featuring intersecting lines in warm tones, offers a versatile and stylish wardrobe staple. Suitable for various occasions, it combines classic design with a contemporary touch.",
-    size: ["S", "M", "L", "XL"],
-    color: ["#000000", "#9BB8CD", "#994D1C"],
-    qty: 1,
-  },
-  {
-    id: 8,
-    title: "Earthy Elegance: Classic Brown Plaid Shirt & Tops",
     image: ["/p2.png", "/p1.png", "/p3.png"],
     slug: "shirt-dress1",
     price: 700,
@@ -115,7 +101,7 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 9,
+    id: 8,
     title: "Earthy Elegance: Classic Brown Plaid Shirt & Tops",
     image: ["/p1.png", "/p2.png", "/p3.png"],
     slug: "shirt-dress2",
@@ -130,7 +116,7 @@ export const products: Product[] = [
   },
   // Pants
   {
-    id: 10,
+    id: 9,
     title: "Denim Classic Jeans for Effortless Style",
     image: ["/m10.avif", "/m11.avif", "/M2.avif"],
     slug: "denim-classic-jeans-for-effortless-style",
@@ -144,7 +130,7 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 11,
+    id: 10,
     title: "Denim Classic Jeans for EffortlessStyle",
     image: ["/M2.avif", "/m11.avif"],
     slug: "denim-classic-jeans-for-style",
@@ -158,9 +144,9 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 12,
+    id: 11,
     title: "Denim Classic Jeans for Effortless Style",
-    image: ["/m11.avif", "/m10.avif"],
+    image: ["/M1.avif", "/m10.avif"],
     slug: "denim-classic-jeans-for-effortless-style1",
     price: 450,
     discount: 0,
@@ -172,7 +158,7 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 13,
+    id: 12,
     title: "Denim Classic Jeans for Effortless Style",
     image: ["/M6.avif", "/M5.avif", "/M6.avif"],
     slug: "denim-classic-jeans-for-effortless-style2",
@@ -186,7 +172,7 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 14,
+    id: 13,
     title: "Denim Classic Jeans for Effortless Style",
     image: ["/M7.avif", "/m11.avif", "/M2.avif", "/M6.avif", "/M7.avif"],
     slug: "denim-classic-jeans-for-effortless-style3",
@@ -200,7 +186,7 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 15,
+    id: 14,
     title: "Denim Classic Jeans for Effortless Style",
     image: ["/m11.avif", "/M2.avif", "/M6.avif", "/M7.avif"],
     slug: "denim-classic-jeans-for-effortless-style5",
@@ -215,7 +201,7 @@ export const products: Product[] = [
   },
   //accesories
   {
-    id: 16,
+    id: 15,
     title: "Elegant Essentials: Accessorize Your Style",
     image: ["/ac1.avif", "/ac2.avif", "/ac4.webp", "/ac3.webp"],
     slug: "elegant-essentials-accessorize-your-style",
@@ -229,7 +215,7 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 17,
+    id: 16,
     title: "Elegant Essentials: Accessorize Your Style",
     image: ["/ac2.avif", "/ac4.webp", "/ac3.webp"],
     slug: "elegant-essentials-accessorize-your-styles",
@@ -243,7 +229,7 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 18,
+    id: 17,
     title: "Elegant Essentials: Accessorize Your Style",
     image: ["/ac4.webp", "/ac1.avif", "/ac2.avif", "/ac3.webp"],
     slug: "elegant-essentials-accessorize-your-styless",
@@ -257,7 +243,7 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 19,
+    id: 18,
     title: "Elegant Essentials: Accessorize Your Style",
     image: ["/ac3.webp", "/ac2.avif", "/ac4.webp", "/ac1.avif"],
     slug: "elegant-essentials-accessorize-your-style-",
@@ -271,7 +257,7 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 20,
+    id: 19,
     title: "Elegant Essentials: Accessorize Your Style",
     image: ["/accesories2.avif", "/ac2.avif", "/ac4.webp", "/ac3.webp"],
     slug: "elegant-essentials-accessorize-your-style1",
@@ -285,7 +271,7 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 21,
+    id: 20,
     title: "Elegant Essentials: Accessorize Your Style",
     image: ["/avif5.avif", "/ac2.avif", "/ac4.webp", "/ac3.webp"],
     slug: "elegant-essentials-accessorize-your-stylez",
@@ -300,7 +286,7 @@ export const products: Product[] = [
   },
   // shoes
   {
-    id: 22,
+    id: 21,
     title: "Sleek Leather Oxford Shoes",
     image: [
       "/shoes.avif",
@@ -321,7 +307,7 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 23,
+    id: 22,
     title: "Sleek Leather Oxford Shoes",
     image: [
       "/shoes2.avif",
@@ -342,7 +328,7 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 24,
+    id: 23,
     title: "Sleek Leather Oxford Shoes",
     image: [
       "/shoes3.avif",
@@ -363,7 +349,7 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 25,
+    id: 24,
     title: "Sleek Leather Oxford Shoes",
     image: [
       "/shoes4.avif",
@@ -384,7 +370,7 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 26,
+    id: 25,
     title: "Sleek Leather Oxford Shoes3",
     image: [
       "/shoes5.avif",
@@ -405,7 +391,7 @@ export const products: Product[] = [
     qty: 1,
   },
   {
-    id: 27,
+    id: 26,
     title: "Sleek Leather Oxford Shoes",
     image: [
       "/shoes6.webp",
