@@ -1,40 +1,10 @@
-import Image from "next/image";
+"use client";
 import React from "react";
 import BestSellingCard from "./bestSellingCard";
+import { useAppSelector } from "@/app/store/hooks";
 
 const BestSelling = () => {
-  const bestSell = [
-    {
-      src: "/p1.png",
-      alt: "Black t.shirt",
-      title: "Black Shirt",
-      description: "Best Quality t-shirt for women",
-      price: 150,
-      category: "tops",
-      slug: "black-shirtsss",
-      discount: 0,
-    },
-    {
-      src: "/p11.png",
-      alt: "Brown t.shirt",
-      title: "Brown Shirtsssss",
-      description: "Best Quality t-shirt for men",
-      price: 250,
-      category: "tops",
-      slug: "brown-shirt",
-      discount: 10,
-    },
-    {
-      src: "/shoes5.avif",
-      alt: "Best shoes",
-      title: "Brown Shoes",
-      description: "Best Quality shoes for men",
-      price: 500,
-      category: "tops",
-      slug: "brown-shoes",
-      discount: 0,
-    },
-  ];
+  const bestSell = useAppSelector((state) => state.product.slice(11, 14));
 
   return (
     <div className="mb-[100px] mt-[100px] mx-auto">
@@ -52,8 +22,8 @@ const BestSelling = () => {
         {bestSell.map((items, i) => (
           <BestSellingCard
             key={i}
-            src={items.src}
-            alt={items.alt}
+            src={items.image[0]}
+            alt={items.title}
             descripton={items.description}
             title={items.title}
             price={items.price}

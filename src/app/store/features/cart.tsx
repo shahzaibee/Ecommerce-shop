@@ -1,6 +1,5 @@
 import { Cart } from "@/app/utlis/type";
 import { createSlice } from "@reduxjs/toolkit";
-import { stat } from "fs";
 
 // Define the initial state using that type
 const initialState: Cart[] = [];
@@ -63,6 +62,6 @@ export const cartSlice = createSlice({
   },
 });
 
-export const { addToCart, delItem, addCart ,subCart} = cartSlice.actions;
+export const { addToCart, delItem, addCart, subCart } = cartSlice.actions;
 
 export default cartSlice.reducer;
