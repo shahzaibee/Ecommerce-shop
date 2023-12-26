@@ -4,8 +4,7 @@ import BestSellingCard from "./bestSellingCard";
 import { useAppSelector } from "@/app/store/hooks";
 
 const BestSelling = () => {
-  const bestSell = useAppSelector((state) => state.product.slice(11, 14));
-
+  const bestSell = useAppSelector((state) => state.product.slice(20, 23));
   return (
     <div className="mb-[100px] mt-[100px] mx-auto">
       {/* Heading */}
