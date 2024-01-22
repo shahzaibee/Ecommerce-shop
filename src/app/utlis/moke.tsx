@@ -76,7 +76,7 @@ export const products: Product[] = [
     id: 6,
     title: "Earthy Elegance: Classic Brown Plaid Shirt & Tops",
     image: ["/J1.jpeg", "/f21.webp"],
-    slug: "brown-check-shirt--",
+    slug: "brown-check-shirt---",
     price: 400,
     discount: 20,
     category: "tops",
